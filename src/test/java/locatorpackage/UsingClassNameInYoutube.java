@@ -34,6 +34,7 @@ public class UsingClassNameInYoutube
             Thread.sleep(2000);
 
             driver.manage().window().fullscreen();
+            
         }
         catch (Exception e)
         {
