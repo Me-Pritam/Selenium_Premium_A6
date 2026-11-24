@@ -19,7 +19,8 @@ public class UsingRelativeLocator
 
           Thread.sleep(6000);
 
-          driver.findElement(RelativeLocator.with(By.xpath("//a[text()='Women' and @data-index='1']")).near(By.xpath("//a[text()='Men' and @data-index='0']"))).
+          driver.findElement(RelativeLocator.with(By.xpath("//a[text()='Women' and @data-index='1']"))
+                                            .near(By.xpath("//a[text()='Men' and @data-index='0']"))).
                   click();
       }
       catch (Exception e)
