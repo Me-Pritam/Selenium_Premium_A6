@@ -58,6 +58,9 @@ public class SwitchingToOneChildFromMultiChild
                   {
                       break;
                   }
+                  else {
+                      driver.close();
+                  }
               }
           }
 
