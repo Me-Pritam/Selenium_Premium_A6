@@ -19,7 +19,7 @@ public class UsingWebElementGetterMethods
 
           Thread.sleep(2000);
 
-          WebElement logInButton =  driver.findElement(By.xpath("//div[@aria-label='Log in']"));
+          WebElement logInButton =  driver.findElement(By.cssSelector("div[aria-label='Log in'] .xtvsq51[role='none']"));
 
           System.out.println(logInButton.getText());
 
@@ -32,6 +32,9 @@ public class UsingWebElementGetterMethods
           System.out.println(logInButton.getSize());
 
           System.out.println(logInButton.getLocation());
+
+          System.out.println(logInButton.getRect().getDimension());
+          System.out.println(logInButton.getRect().getPoint());
       }
       catch (Exception e)
       {
